@@ -12,7 +12,8 @@
 'UttConfig',
             'BlurAdmin.pages.ui',
             'BlurAdmin.pages.home',
-            'BlurAdmin.pages.auth'
+            'BlurAdmin.pages.auth',
+            'BlurAdmin.pages.details'
     ])
         .config(routeConfig);
 
@@ -20,7 +21,4 @@
     function routeConfig($urlRouterProvider) {
         $urlRouterProvider.otherwise('/');
     }
-
-
-
 })();
