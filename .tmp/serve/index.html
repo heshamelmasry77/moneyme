@@ -57,14 +57,8 @@
                 <div ui-view autoscroll="true" autoscroll-body-top></div>
             </div>
         </div>
+        <site-footer></site-footer>
 
-        <footer class="al-footer clearfix">
-            <div class="al-footer-right">Created with <i class="ion-heart"></i>by Three Donuts</div>
-            <div class="al-footer-main clearfix">
-                <div class="al-copy">Utt 2017</div>
-
-            </div>
-        </footer>
 
         <back-top></back-top>
     </main>
@@ -140,22 +134,22 @@
 
     <!-- build:js({.tmp/serve,.tmp/partials,src}) scripts/app.js -->
     <!-- inject:js -->
-    <script src="app/pages/pages.module.js"></script>
     <script src="app/theme/theme.module.js"></script>
-    <script src="app/pages/auth/auth.module.js"></script>
-    <script src="app/pages/details/details.module.js"></script>
-    <script src="app/pages/ui/ui.module.js"></script>
-    <script src="app/pages/home/home.module.js"></script>
+    <script src="app/pages/pages.module.js"></script>
     <script src="app/theme/components/components.module.js"></script>
     <script src="app/theme/inputs/inputs.module.js"></script>
+    <script src="app/pages/auth/auth.module.js"></script>
+    <script src="app/pages/details/details.module.js"></script>
+    <script src="app/pages/home/home.module.js"></script>
+    <script src="app/pages/ui/ui.module.js"></script>
     <script src="app/pages/ui/alerts/alerts.module.js"></script>
     <script src="app/pages/ui/buttons/buttons.module.js"></script>
     <script src="app/pages/ui/grid/grid.module.js"></script>
     <script src="app/pages/ui/icons/icons.module.js"></script>
     <script src="app/pages/ui/modals/modals.module.js"></script>
     <script src="app/pages/ui/notifications/notifications.module.js"></script>
-    <script src="app/pages/ui/panels/panels.module.js"></script>
     <script src="app/pages/ui/progressBars/progressBars.module.js"></script>
+    <script src="app/pages/ui/panels/panels.module.js"></script>
     <script src="app/pages/ui/slider/slider.module.js"></script>
     <script src="app/pages/ui/tabs/tabs.module.js"></script>
     <script src="app/pages/ui/typography/typography.module.js"></script>
@@ -182,14 +176,6 @@
     <script src="app/theme/services/preloader.js"></script>
     <script src="app/theme/services/registration.js"></script>
     <script src="app/theme/services/stopableInterval.js"></script>
-    <script src="app/pages/auth/controllers/AuthController.js"></script>
-    <script src="app/pages/details/controllers/TopPayingHyipController.js"></script>
-    <script src="app/pages/details/controllers/TopPayingMiningController.js"></script>
-    <script src="app/pages/ui/buttons/ButtonPageCtrl.js"></script>
-    <script src="app/pages/ui/icons/IconsPageCtrl.js"></script>
-    <script src="app/pages/ui/modals/ModalsPageCtrl.js"></script>
-    <script src="app/pages/ui/notifications/NotificationsPageCtrl.js"></script>
-    <script src="app/pages/home/controllers/HomeController.js"></script>
     <script src="app/theme/components/baPanel/baPanel.directive.js"></script>
     <script src="app/theme/components/baPanel/baPanel.service.js"></script>
     <script src="app/theme/components/baPanel/baPanelBlur.directive.js"></script>
@@ -199,13 +185,14 @@
     <script src="app/theme/components/baSidebar/baSidebar.directive.js"></script>
     <script src="app/theme/components/baSidebar/baSidebar.service.js"></script>
     <script src="app/theme/components/baSidebar/baSidebarHelpers.directive.js"></script>
+    <script src="app/theme/components/backTop/backTop.directive.js"></script>
+    <script src="app/theme/components/contentTop/contentTop.directive.js"></script>
     <script src="app/theme/components/baWizard/baWizard.directive.js"></script>
     <script src="app/theme/components/baWizard/baWizardCtrl.js"></script>
     <script src="app/theme/components/baWizard/baWizardStep.directive.js"></script>
-    <script src="app/theme/components/backTop/backTop.directive.js"></script>
-    <script src="app/theme/components/contentTop/contentTop.directive.js"></script>
     <script src="app/theme/components/msgCenter/MsgCenterCtrl.js"></script>
     <script src="app/theme/components/msgCenter/msgCenter.directive.js"></script>
+    <script src="app/theme/components/footer/siteFooter.directive.js"></script>
     <script src="app/theme/components/pageTop/pageTop.directive.js"></script>
     <script src="app/theme/components/progressBarRound/progressBarRound.directive.js"></script>
     <script src="app/theme/components/widgets/widgets.directive.js"></script>
@@ -214,9 +201,17 @@
     <script src="app/theme/filters/image/profilePicture.js"></script>
     <script src="app/theme/filters/text/removeHtml.js"></script>
     <script src="app/theme/inputs/baSwitcher/baSwitcher.js"></script>
+    <script src="app/pages/details/controllers/TopPayingHyipController.js"></script>
+    <script src="app/pages/details/controllers/TopPayingMiningController.js"></script>
+    <script src="app/pages/auth/controllers/AuthController.js"></script>
+    <script src="app/pages/home/controllers/HomeController.js"></script>
+    <script src="app/pages/ui/buttons/ButtonPageCtrl.js"></script>
+    <script src="app/pages/ui/icons/IconsPageCtrl.js"></script>
+    <script src="app/pages/ui/modals/ModalsPageCtrl.js"></script>
+    <script src="app/pages/ui/notifications/NotificationsPageCtrl.js"></script>
+    <script src="app/theme/components/backTop/lib/jquery.backTop.min.js"></script>
     <script src="app/pages/ui/modals/notifications/NotificationsCtrl.js"></script>
     <script src="app/pages/ui/modals/progressModal/ProgressModalCtrl.js"></script>
-    <script src="app/theme/components/backTop/lib/jquery.backTop.min.js"></script>
     <!-- endinject -->
 
     <!-- inject:partials -->
