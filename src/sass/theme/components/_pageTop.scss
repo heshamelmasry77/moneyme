@@ -1,12 +1,13 @@
 .page-top {
-  background-color: $sidebar;
+  background-color: #232322;
   position: fixed;
   z-index: 904;
   box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.5);
-  height: 66px;
+  height: 70px;
   width: 100%;
   min-width: $resMin;
   padding: 0 32px 0 40px;
+  text-align: center;
 
   &.scrolled {
     background-color: rgba(black, 0.85)
@@ -14,7 +15,7 @@
 }
 
 .page-top-bar {
-  top: 65px;
+  top: 70px;
   background-color: rgba(70, 70, 70, 0.75);
   position: fixed;
   z-index: 904;
@@ -37,7 +38,6 @@ a.al-logo {
   font-size: 24px;
   font-family: $font-family;
   white-space: nowrap;
-  float: left;
   outline: none !important;
   line-height: 60px;
 

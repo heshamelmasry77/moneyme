@@ -2,15 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10960222-76aa-4d0e-9b6e-eceff48843d5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/app/theme/components/pageTop/PageTopController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/sass/app/_homeCustom.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.tmp/serve/app/main.css" afterPath="$PROJECT_DIR$/.tmp/serve/app/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.tmp/serve/index.html" afterPath="$PROJECT_DIR$/.tmp/serve/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/pages/home/views/home.html" afterPath="$PROJECT_DIR$/src/app/pages/home/views/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/theme/components/pageTop/pageTop.directive.js" afterPath="$PROJECT_DIR$/src/app/theme/components/pageTop/pageTop.directive.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app/theme/components/pageTop/pageTop.html" afterPath="$PROJECT_DIR$/src/app/theme/components/pageTop/pageTop.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/theme/_layout.scss" afterPath="$PROJECT_DIR$/src/sass/theme/_layout.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/theme/components/_pageTop.scss" afterPath="$PROJECT_DIR$/src/sass/theme/components/_pageTop.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -85,7 +76,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_homeCustom.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_homeCustom.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sass/app/_homeCustom.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
@@ -112,11 +103,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_pageTop.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_pageTop.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sass/theme/components/_pageTop.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="13" column="1" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+            <state relative-caret-position="139">
+              <caret line="81" column="21" lean-forward="true" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -144,6 +135,8 @@
       <find>al-m</find>
       <find>url</find>
       <find>al-con</find>
+      <find>.page-top</find>
+      <find>$sidebar</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -171,10 +164,10 @@
         <option value="$PROJECT_DIR$/src/app/theme/components/pageTop/pageTop.directive.js" />
         <option value="$PROJECT_DIR$/src/app/theme/components/pageTop/PageTopController.js" />
         <option value="$PROJECT_DIR$/src/app/theme/components/pageTop/pageTop.html" />
-        <option value="$PROJECT_DIR$/src/sass/theme/components/_pageTop.scss" />
         <option value="$PROJECT_DIR$/src/sass/theme/_layout.scss" />
         <option value="$PROJECT_DIR$/src/app/pages/home/views/home.html" />
         <option value="$PROJECT_DIR$/src/sass/app/_homeCustom.scss" />
+        <option value="$PROJECT_DIR$/src/sass/theme/components/_pageTop.scss" />
       </list>
     </option>
   </component>
@@ -365,6 +358,14 @@
               <item name="sass" type="462c0819:PsiDirectoryNode" />
               <item name="theme" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="moneyme" type="b2602c69:ProjectViewProjectNode" />
+              <item name="moneyme" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sass" type="462c0819:PsiDirectoryNode" />
+              <item name="theme" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -485,12 +486,12 @@
       <workItem from="1504646838753" duration="2266000" />
       <workItem from="1504730025163" duration="734000" />
       <workItem from="1504731755654" duration="727000" />
-      <workItem from="1504771530522" duration="3715000" />
+      <workItem from="1504771530522" duration="3992000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10549000" />
+    <option name="totallyTimeSpent" value="10826000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -832,14 +833,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/theme/components/_pageTop.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="13" column="1" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/theme/components/_progressRound.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -897,6 +890,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/theme/components/_pageTop.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="81" column="21" lean-forward="true" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="21" />
           <folding />
         </state>
       </provider>
