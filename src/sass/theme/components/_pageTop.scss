@@ -13,6 +13,24 @@
   }
 }
 
+.page-top-bar {
+  top: 65px;
+  background-color: rgba(70, 70, 70, 0.75);
+  position: fixed;
+  z-index: 904;
+  box-shadow: 2px 0 3px rgba(0, 0, 0, 0.5);
+  height: 40px;
+  width: 100%;
+  min-width: 320px;
+  padding: 0 32px 0 40px;
+  h4 {
+    color: #b2b1af;
+    font-weight: 300;
+    margin: 0 0 0 75px;
+    padding-top: 10px;
+  }
+}
+
 a.al-logo {
   color: $sidebar-text;
   display: block;
@@ -152,7 +170,7 @@ a.collapse-menu-link {
 }
 
 @media (max-width: $resXXS) {
-  .user-profile{
+  .user-profile {
     min-width: 136px;
   }
   a.refresh-data {
@@ -167,6 +185,6 @@ a.collapse-menu-link {
   }
 }
 
-.profile-toggle-link{
+.profile-toggle-link {
   cursor: pointer;
 }
