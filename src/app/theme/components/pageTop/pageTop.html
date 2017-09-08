@@ -1,8 +1,15 @@
 <header ng-init="header.init()">
-<div class="page-top clearfix" scroll-position="scrolled" max-height="50" ng-class="{'scrolled': scrolled}">
-    <a href="#/dashboard" class="al-logo clearfix"><span>Mony</span>Me</a>
-</div>
-<div class="page-top-bar clearfix" scroll-position="scrolled" max-height="50" ng-class="{'scrolled': scrolled}">
-    <h4>Today Date: {{header.date | date:'yyyy-MM-dd'}}</h4>
-</div>
+    <div class="page-top clearfix" scroll-position="scrolled" max-height="50" ng-class="{'scrolled': scrolled}">
+        <a href="#/dashboard" class="al-logo clearfix"><span>Mony</span>Me</a>
+    </div>
+    <div class="page-top-bar clearfix" scroll-position="scrolled" max-height="50" ng-class="{'scrolled': scrolled}">
+        <h4>Today Date: {{header.date | date:'yyyy-MM-dd'}}</h4>
+        <nav class="clearfix">
+            <ul>
+                <li><a href="" class="active">Top BITCOIN mining</a></li>
+                <li><a href="">Top paying HYIP</a></li>
+                <li><a href="">SCAMS</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
