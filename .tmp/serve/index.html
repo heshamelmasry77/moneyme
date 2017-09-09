@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MonyMe</title>
 
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900&subset=latin,greek,greek-ext,vietnamese,cyrillic-ext,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700" rel="stylesheet">
 
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
@@ -134,32 +134,32 @@
 
     <!-- build:js({.tmp/serve,.tmp/partials,src}) scripts/app.js -->
     <!-- inject:js -->
-    <script src="app/theme/theme.module.js"></script>
     <script src="app/pages/pages.module.js"></script>
-    <script src="app/theme/components/components.module.js"></script>
-    <script src="app/theme/inputs/inputs.module.js"></script>
+    <script src="app/theme/theme.module.js"></script>
     <script src="app/pages/auth/auth.module.js"></script>
     <script src="app/pages/details/details.module.js"></script>
     <script src="app/pages/home/home.module.js"></script>
     <script src="app/pages/ui/ui.module.js"></script>
+    <script src="app/theme/components/components.module.js"></script>
+    <script src="app/theme/inputs/inputs.module.js"></script>
     <script src="app/pages/ui/alerts/alerts.module.js"></script>
     <script src="app/pages/ui/buttons/buttons.module.js"></script>
     <script src="app/pages/ui/grid/grid.module.js"></script>
     <script src="app/pages/ui/icons/icons.module.js"></script>
-    <script src="app/pages/ui/modals/modals.module.js"></script>
     <script src="app/pages/ui/notifications/notifications.module.js"></script>
+    <script src="app/pages/ui/modals/modals.module.js"></script>
     <script src="app/pages/ui/panels/panels.module.js"></script>
     <script src="app/pages/ui/progressBars/progressBars.module.js"></script>
     <script src="app/pages/ui/slider/slider.module.js"></script>
     <script src="app/pages/ui/tabs/tabs.module.js"></script>
     <script src="app/pages/ui/typography/typography.module.js"></script>
     <script src="app/app.js"></script>
+    <script src="app/config/config.js"></script>
     <script src="app/theme/theme.config.js"></script>
     <script src="app/theme/theme.configProvider.js"></script>
     <script src="app/theme/theme.constants.js"></script>
     <script src="app/theme/theme.run.js"></script>
     <script src="app/theme/theme.service.js"></script>
-    <script src="app/config/config.js"></script>
     <script src="app/theme/components/toastrLibConfig.js"></script>
     <script src="app/theme/directives/animatedChange.js"></script>
     <script src="app/theme/directives/autoExpand.js"></script>
@@ -176,6 +176,14 @@
     <script src="app/theme/services/preloader.js"></script>
     <script src="app/theme/services/registration.js"></script>
     <script src="app/theme/services/stopableInterval.js"></script>
+    <script src="app/pages/auth/controllers/AuthController.js"></script>
+    <script src="app/pages/details/controllers/TopPayingHyipController.js"></script>
+    <script src="app/pages/details/controllers/TopPayingMiningController.js"></script>
+    <script src="app/pages/home/controllers/HomeController.js"></script>
+    <script src="app/pages/ui/buttons/ButtonPageCtrl.js"></script>
+    <script src="app/pages/ui/icons/IconsPageCtrl.js"></script>
+    <script src="app/pages/ui/notifications/NotificationsPageCtrl.js"></script>
+    <script src="app/pages/ui/modals/ModalsPageCtrl.js"></script>
     <script src="app/theme/components/baPanel/baPanel.directive.js"></script>
     <script src="app/theme/components/baPanel/baPanel.service.js"></script>
     <script src="app/theme/components/baPanel/baPanelBlur.directive.js"></script>
@@ -202,17 +210,9 @@
     <script src="app/theme/filters/image/profilePicture.js"></script>
     <script src="app/theme/filters/text/removeHtml.js"></script>
     <script src="app/theme/inputs/baSwitcher/baSwitcher.js"></script>
-    <script src="app/pages/auth/controllers/AuthController.js"></script>
-    <script src="app/pages/details/controllers/TopPayingHyipController.js"></script>
-    <script src="app/pages/details/controllers/TopPayingMiningController.js"></script>
-    <script src="app/pages/home/controllers/HomeController.js"></script>
-    <script src="app/pages/ui/buttons/ButtonPageCtrl.js"></script>
-    <script src="app/pages/ui/icons/IconsPageCtrl.js"></script>
-    <script src="app/pages/ui/modals/ModalsPageCtrl.js"></script>
-    <script src="app/pages/ui/notifications/NotificationsPageCtrl.js"></script>
-    <script src="app/theme/components/backTop/lib/jquery.backTop.min.js"></script>
     <script src="app/pages/ui/modals/notifications/NotificationsCtrl.js"></script>
     <script src="app/pages/ui/modals/progressModal/ProgressModalCtrl.js"></script>
+    <script src="app/theme/components/backTop/lib/jquery.backTop.min.js"></script>
     <!-- endinject -->
 
     <!-- inject:partials -->

@@ -13,19 +13,10 @@ wrench.readdirSyncRecursive('./gulp').filter(function(file) {
   require('./gulp/' + file);
 });
 
-var htmlbeautify = require('gulp-html-beautify');
-
-gulp.task('htmlbeautify', function() {
-  var options =
-  {indentSize: 2};
-  gulp.src('./src/*.html')
-  .pipe(htmlbeautify(options))
-  .pipe(gulp.dest('./public/'))
-});
 /**
  *  Default task clean temporaries directories and launch the
  *  main optimization build task
  */
-gulp.task('default', ['clean'], function () {
+gulp.task('default', ['clean'], function() {
   gulp.start('build');
 });
