@@ -27,43 +27,178 @@
 </head>
 
 <body>
-    <!--<div class="body-bg"></div>-->
-    <main>
+<!--<div class="body-bg"></div>-->
+<div class="menuTrigger">MENU</div>
 
-        <!--<ba-sidebar></ba-sidebar>-->
-        <page-top></page-top>
+<div class="panel">
+    <nav class="clearfix">
+        <ul>
+            <li><a href="" class="active">Top bit coin mining</a></li>
+            <li><a href="">Top paying hyip</a></li>
+            <li><a href="">Scams</a></li>
+        </ul>
+    </nav>
+</div>
+<main class="page">
 
-        <div class="al-main">
-            <div class="al-content">
-                <div ui-view autoscroll="true" autoscroll-body-top></div>
-            </div>
+    <!--<ba-sidebar></ba-sidebar>-->
+    <page-top></page-top>
+
+    <div class="al-main wrapper">
+        <div class="al-content">
+
+            <div ui-view autoscroll="true" autoscroll-body-top></div>
         </div>
-        <site-footer></site-footer>
+    </div>
+    <site-footer></site-footer>
 
 
-        <back-top></back-top>
-    </main>
+    <back-top></back-top>
+</main>
 
-    <!--<div id="preloader" ng-show="!$pageFinishedLoading">-->
-        <!--<div></div>-->
-    <!--</div>-->
+<!--<div id="preloader" ng-show="!$pageFinishedLoading">-->
+<!--<div></div>-->
+<!--</div>-->
 
-    <!-- build:js(src) scripts/vendor.js -->
-    <!-- bower:js -->
-    <!-- run `gulp inject` to automatically populate bower script dependencies -->
-    <!-- endbower -->
-    <!-- endbuild -->
+<!-- build:js(src) scripts/vendor.js -->
+<!-- bower:js -->
+<!-- run `gulp inject` to automatically populate bower script dependencies -->
+<!-- endbower -->
+<!-- endbuild -->
 
-    <!-- build:js({.tmp/serve,.tmp/partials,src}) scripts/app.js -->
-    <!-- inject:js -->
-    <!-- js files will be automatically insert here -->
-    <!-- endinject -->
+<!-- build:js({.tmp/serve,.tmp/partials,src}) scripts/app.js -->
+<!-- inject:js -->
+<!-- js files will be automatically insert here -->
+<!-- endinject -->
 
-    <!-- inject:partials -->
-    <!-- angular templates will be automatically converted in js and inserted here -->
-    <!-- endinject -->
-    <!-- endbuild -->
+<!-- inject:partials -->
+<!-- angular templates will be automatically converted in js and inserted here -->
+<!-- endinject -->
+<!-- endbuild -->
 
 </body>
 
 </html>
+
+<style>
+
+    .page {
+        overflow-x: hidden;
+        position: relative;
+    }
+
+    .wrapper {
+        position: relative;
+        top: 0;
+        -webkit-transition: ease 0.5s;
+        -moz-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+    }
+
+    .wrapper.pushed {
+        -webkit-transform: translateX(-200px);
+        -moz-transform: translateX(-200px);
+        -ms-transform: translateX(-200px);
+        -o-transform: translateX(-200px);
+        transform: translateX(-200px);
+    }
+
+    .menuTrigger {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        padding: 10px 10px;
+        background: #F15F48;
+        cursor: pointer;
+        color: #fff;
+        z-index: 9999999999;
+        font-weight: bold;
+    }
+
+    .panel, .subPanel {
+        width: 200px;
+        background: #F8F7F2;
+        position: absolute;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+        right: -200px;
+        -webkit-transition: ease 0.5s;
+        -moz-transition: ease 0.5s;
+        -o-transition: ease 0.5s;
+        transition: ease 0.5s;
+        overflow: hidden;
+    }
+
+    .panel {
+        z-index: 10;
+        border-left: 1px solid #F2F0E8;
+        border-radius: 0;
+    }
+
+    .panel ul li {
+        width: 180px;
+        padding: 10px;
+        border-bottom: 1px solid #F2F0E8;
+        color: #F15F48;
+        cursor: pointer;
+    }
+
+    .panel ul li:hover {
+        background: #F15F48;
+        color: #fff;
+    }
+
+    .panel ul li ul li {
+        color: #00B4AB;
+    }
+
+    .panel ul li ul li:hover {
+        background: #00B4AB;
+        color: #fff;
+    }
+
+    .panel.isOpen, .subPanel.isOpen {
+        -webkit-transform: translateX(-200px);
+        -moz-transform: translateX(-200px);
+        -ms-transform: translateX(-200px);
+        -o-transform: translateX(-200px);
+        transform: translateX(-200px);
+    }
+
+    .subPanel {
+        z-index: 20;
+    }
+
+    .subPanel .heading {
+        background: #F15F48;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .closeSubPanel, .closePanel, .openSubPanel {
+        cursor: pointer;
+    }
+</style>
+
+
+<script>
+  $('.menuTrigger').click(function() {
+    $('.panel').toggleClass('isOpen');
+    $('.wrapper').toggleClass('pushed');
+  });
+
+  $('.openSubPanel').click(function() {
+    $(this).next('.subPanel').addClass('isOpen');
+  });
+
+  $('.closeSubPanel').click(function() {
+    $('.subPanel').removeClass('isOpen');
+  });
+
+  $('.closePanel').click(function() {
+    $('.panel').removeClass('isOpen');
+    $('.wrapper').removeClass('pushed');
+  });
+</script>

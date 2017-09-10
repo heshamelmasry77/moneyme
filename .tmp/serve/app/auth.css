@@ -79,7 +79,8 @@ body {
 
 html {
   position: relative;
-  min-width: 320px; }
+  min-width: 320px;
+  overflow-x: hidden; }
 
 html, body, main {
   min-height: 100%;
@@ -89,7 +90,10 @@ html, body, main {
 body {
   font: 14px/16px "Josefin Sans", sans-serif;
   color: #666666;
-  background-color: #F0F3F4; }
+  position: relative;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  min-height: 100%; }
   body.blur-theme::before {
     content: '';
     position: fixed;
@@ -101,6 +105,20 @@ body {
     background-size: cover;
     will-change: transform;
     z-index: -1; }
+  body:after {
+    content: "";
+    background: url(/assets/img/bg.jpg) no-repeat center center;
+    background-size: cover;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    -webkit-filter: grayscale(0.1);
+    /* Old WebKit */
+    filter: grayscale(0.1); }
 
 body.mobile {
   background: none; }

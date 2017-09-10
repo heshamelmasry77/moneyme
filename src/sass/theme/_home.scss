@@ -16,20 +16,22 @@
 }
 
 .weekly-payout-report {
-  color: #232322;
   padding-top: 25px;
   background: rgba(255, 255, 255, 0.85);
-  width: -webkit-fill-available;
-  margin: 0 0 0 75%;
+  margin: 0;
   border-radius: 2px;
   padding-left: 0;
   padding-right: 0;
-  position: absolute;
-  top: 20%;
   height: auto;
-  min-height: 69%;
+  position: absolute;
+  right: 0;
+  top: 19.5%;
+  @media (max-width: 768px) {
+    position: relative;
+  }
   h2 {
     font-weight: bold;
+    color: #525659;
   }
 
   ul {
