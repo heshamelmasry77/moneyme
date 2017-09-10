@@ -1,6 +1,5 @@
 .weekly-report-heading {
-  position: relative;
-  top: 100px;
+  margin-top: 15%;
   text-align: center;
   color: #ffffff;
   h1 {
@@ -12,6 +11,45 @@
       &:nth-child(2) {
         color: #009688;
       }
+    }
+  }
+}
+
+.weekly-payout-report {
+  color: #232322;
+  padding-top: 25px;
+  background: rgba(255, 255, 255, 0.85);
+  width: -webkit-fill-available;
+  margin: 0 0 0 75%;
+  border-radius: 2px;
+  padding-left: 0;
+  padding-right: 0;
+  position: absolute;
+  top: 20%;
+  height: auto;
+  min-height: 69%;
+  h2 {
+    font-weight: bold;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0;
+    li {
+      height: 40px;
+      display: table;
+      width: 100%;
+      a {
+        vertical-align: middle;
+        display: table-cell;
+      }
+    }
+    li:nth-child(odd) {
+      background-color: #b6b6b5;
+    }
+    li:nth-child(even) {
+      background-color: white;
     }
   }
 }
