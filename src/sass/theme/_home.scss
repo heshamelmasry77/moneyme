@@ -1,0 +1,17 @@
+.weekly-report-heading {
+  position: relative;
+  top: 100px;
+  text-align: center;
+  color: #ffffff;
+  h1 {
+    span {
+      font-weight: bold;
+      &:nth-child(1) {
+        color: #f44336;
+      }
+      &:nth-child(2) {
+        color: #009688;
+      }
+    }
+  }
+}

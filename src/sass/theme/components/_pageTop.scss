@@ -90,6 +90,9 @@ a.al-logo {
     text-decoration: none;
     color: #ffffff;
   }
+  &:focus {
+    text-decoration: none;
+  }
 }
 
 .user-profile {

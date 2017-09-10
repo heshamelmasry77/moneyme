@@ -5,7 +5,7 @@ html {
   min-width: 320px;
 }
 
-html, body,main {
+html, body, main {
   min-height: 100%;
   height: 100%;
   min-width: $resMin;
@@ -15,6 +15,11 @@ body {
   font: 14px/16px $font-family;
   color: $default-text;
   background-color: $body-bg;
+  background: url(/assets/img/bg.jpg) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   &.blur-theme {
     @include main-background();
   }
@@ -73,7 +78,7 @@ a {
 }
 
 .al-footer {
-  height: 90px;
+  height: 70px;
   padding: 0 18px 0;
   width: 100%;
   position: absolute;
@@ -114,6 +119,9 @@ a {
     }
     &.active {
       text-decoration: underline;
+    }
+    &:focus {
+      text-decoration: none;
     }
   }
   .credits {
