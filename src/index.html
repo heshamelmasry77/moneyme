@@ -26,7 +26,7 @@
     <!-- endbuild -->
 </head>
 
-<body>
+<body class="page">
 <!--<div class="body-bg"></div>-->
 <div class="menuTrigger">MENU</div>
 
@@ -39,12 +39,12 @@
         </ul>
     </nav>
 </div>
-<main class="page">
+<main class=" wrapper">
 
     <!--<ba-sidebar></ba-sidebar>-->
     <page-top></page-top>
 
-    <div class="al-main wrapper">
+    <div class="al-main ">
         <div class="al-content">
 
             <div ui-view autoscroll="true" autoscroll-body-top></div>
@@ -79,109 +79,6 @@
 </body>
 
 </html>
-
-<style>
-
-    .page {
-        overflow-x: hidden;
-        position: relative;
-    }
-
-    .wrapper {
-        position: relative;
-        top: 0;
-        -webkit-transition: ease 0.5s;
-        -moz-transition: ease 0.5s;
-        -o-transition: ease 0.5s;
-        transition: ease 0.5s;
-    }
-
-    .wrapper.pushed {
-        -webkit-transform: translateX(-200px);
-        -moz-transform: translateX(-200px);
-        -ms-transform: translateX(-200px);
-        -o-transform: translateX(-200px);
-        transform: translateX(-200px);
-    }
-
-    .menuTrigger {
-        position: absolute;
-        right: 20px;
-        top: 20px;
-        padding: 10px 10px;
-        background: #F15F48;
-        cursor: pointer;
-        color: #fff;
-        z-index: 9999999999;
-        font-weight: bold;
-    }
-
-    .panel, .subPanel {
-        width: 200px;
-        background: #F8F7F2;
-        position: absolute;
-        height: 100%;
-        top: 0;
-        bottom: 0;
-        right: -200px;
-        -webkit-transition: ease 0.5s;
-        -moz-transition: ease 0.5s;
-        -o-transition: ease 0.5s;
-        transition: ease 0.5s;
-        overflow: hidden;
-    }
-
-    .panel {
-        z-index: 10;
-        border-left: 1px solid #F2F0E8;
-        border-radius: 0;
-    }
-
-    .panel ul li {
-        width: 180px;
-        padding: 10px;
-        border-bottom: 1px solid #F2F0E8;
-        color: #F15F48;
-        cursor: pointer;
-    }
-
-    .panel ul li:hover {
-        background: #F15F48;
-        color: #fff;
-    }
-
-    .panel ul li ul li {
-        color: #00B4AB;
-    }
-
-    .panel ul li ul li:hover {
-        background: #00B4AB;
-        color: #fff;
-    }
-
-    .panel.isOpen, .subPanel.isOpen {
-        -webkit-transform: translateX(-200px);
-        -moz-transform: translateX(-200px);
-        -ms-transform: translateX(-200px);
-        -o-transform: translateX(-200px);
-        transform: translateX(-200px);
-    }
-
-    .subPanel {
-        z-index: 20;
-    }
-
-    .subPanel .heading {
-        background: #F15F48;
-        color: #fff;
-        font-weight: bold;
-    }
-
-    .closeSubPanel, .closePanel, .openSubPanel {
-        cursor: pointer;
-    }
-</style>
-
 
 <script>
   $('.menuTrigger').click(function() {

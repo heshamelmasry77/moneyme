@@ -119,6 +119,82 @@ body {
     -webkit-filter: grayscale(0.1);
     /* Old WebKit */
     filter: grayscale(0.1); }
+  body .page {
+    overflow-x: hidden;
+    position: relative; }
+  body .wrapper {
+    position: relative;
+    top: 0;
+    transition: ease 0.5s; }
+  body .wrapper.pushed {
+    -webkit-transform: translateX(-200px);
+    transform: translateX(-200px); }
+  body .menuTrigger {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 10px 10px;
+    background: #F15F48;
+    cursor: pointer;
+    color: #fff;
+    z-index: 9999999999;
+    font-weight: bold; }
+  body .panel, body .subPanel {
+    width: 200px;
+    background: #F8F7F2;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    right: -200px;
+    transition: ease 0.5s;
+    overflow: hidden; }
+  body .panel {
+    z-index: 10;
+    border-radius: 0; }
+    body .panel nav {
+      height: 100%;
+      width: 100%;
+      float: left;
+      margin-top: 90px; }
+      body .panel nav li, body .panel nav ul {
+        list-style: none;
+        padding: 0;
+        text-align: center; }
+      body .panel nav li {
+        display: block;
+        padding: 0;
+        cursor: pointer;
+        width: 100%; }
+      body .panel nav a {
+        display: block;
+        background: #b6b6b5;
+        color: #525659;
+        padding: 15px 10px;
+        font-weight: 400;
+        font-size: 18px;
+        width: 100%;
+        margin: 5px 0 5px 0; }
+    body .panel a:hover {
+      background: #fff;
+      color: #525659;
+      text-decoration: none; }
+    body .panel a.active {
+      background: #fff;
+      color: #525659;
+      text-decoration: none; }
+  body .panel.isOpen, body .subPanel.isOpen {
+    -webkit-transform: translateX(-200px);
+    transform: translateX(-200px); }
+  body .subPanel {
+    z-index: 20; }
+  body .subPanel .heading {
+    background: #F15F48;
+    color: #fff;
+    font-weight: bold; }
+  body .closeSubPanel, body .closePanel, body .openSubPanel {
+    cursor: pointer; }
 
 body.mobile {
   background: none; }

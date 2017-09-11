@@ -3,12 +3,11 @@
 html {
   position: relative;
   min-width: 320px;
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
 
 html, body, main {
   min-height: 100%;
-  height: 100%;
   min-width: $resMin;
 }
 
@@ -23,10 +22,10 @@ body {
   &.blur-theme {
     @include main-background();
   }
-  &:after{
+  &:after {
     content: "";
-    background: url(/assets/img/bg.jpg)  no-repeat center center;
-    background-size:cover;
+    background: url(/assets/img/bg.jpg) no-repeat center center;
+    background-size: cover;
     opacity: 0.8;
     top: 0;
     left: 0;
@@ -36,6 +35,122 @@ body {
     z-index: -1;
     -webkit-filter: grayscale(0.1); /* Old WebKit */
     filter: grayscale(0.1);
+  }
+  .page {
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  .wrapper {
+    position: relative;
+    top: 0;
+    -webkit-transition: ease 0.5s;
+    -moz-transition: ease 0.5s;
+    -o-transition: ease 0.5s;
+    transition: ease 0.5s;
+  }
+
+  .wrapper.pushed {
+    -webkit-transform: translateX(-200px);
+    -moz-transform: translateX(-200px);
+    -ms-transform: translateX(-200px);
+    -o-transform: translateX(-200px);
+    transform: translateX(-200px);
+  }
+
+  .menuTrigger {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 10px 10px;
+    background: #F15F48;
+    cursor: pointer;
+    color: #fff;
+    z-index: 9999999999;
+    font-weight: bold;
+  }
+
+  .panel, .subPanel {
+    width: 200px;
+    background: #F8F7F2;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    right: -200px;
+    -webkit-transition: ease 0.5s;
+    -moz-transition: ease 0.5s;
+    -o-transition: ease 0.5s;
+    transition: ease 0.5s;
+    overflow: hidden;
+  }
+
+  .panel {
+    z-index: 10;
+    border-radius: 0;
+    nav {
+      height: 100%;
+      width: 100%;
+      float: left;
+      margin-top: 90px;
+      li, ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+      }
+      li {
+        display: block;
+        padding: 0;
+        cursor: pointer;
+        width: 100%;
+      }
+      a {
+        display: block;
+        background: #b6b6b5;
+        color: #525659;
+        padding: 15px 10px;
+        font-weight: 400;
+        font-size: 18px;
+        width: 100%;
+        margin: 5px 0 5px 0;
+      }
+    }
+    a {
+      &:hover {
+        background: #fff;
+        color: #525659;
+        text-decoration: none;
+      }
+      &.active {
+        background: #fff;
+        color: #525659;
+        text-decoration: none;
+      }
+    }
+
+  }
+
+  .panel.isOpen, .subPanel.isOpen {
+    -webkit-transform: translateX(-200px);
+    -moz-transform: translateX(-200px);
+    -ms-transform: translateX(-200px);
+    -o-transform: translateX(-200px);
+    transform: translateX(-200px);
+  }
+
+  .subPanel {
+    z-index: 20;
+  }
+
+  .subPanel .heading {
+    background: #F15F48;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .closeSubPanel, .closePanel, .openSubPanel {
+    cursor: pointer;
   }
 }
 
@@ -102,6 +217,12 @@ a {
   font-size: 13px;
   color: #666666;
   transition: padding-left 0.5s ease;
+  @media (max-width: 922px) {
+    position: relative;
+    height: auto;
+    background-color: #11100e;
+    padding-bottom: 30px;
+  }
 
   nav {
     height: 100%;
@@ -144,6 +265,10 @@ a {
       font-weight: 200;
       color: #ffffff;
       margin-top: 23px;
+      @media (max-width: 922px) {
+        margin: 0;
+        text-align: center;
+      }
       i {
         color: #f44336;
       }
@@ -214,7 +339,7 @@ a {
     margin-right: 0;
   }
   .al-footer {
-    height: 76px;
+    height: auto;
     text-align: center;
   }
   .al-main {
@@ -236,3 +361,5 @@ a {
 .irs-grid-text {
   color: $default-text;
 }
+
+

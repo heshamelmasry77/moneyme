@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="BlurAdmin">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MonyMe</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700" rel="stylesheet">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon-96x96.png">
+
+    <link rel="stylesheet" href="styles/vendor-0c9c1322cd.css">
+
+    <link rel="stylesheet" href="styles/app-4276655c6e.css">
+</head>
+
+<body class="page">
+<!--<div class="body-bg"></div>-->
+<div class="menuTrigger">MENU</div>
+
+<div class="panel">
+    <nav class="clearfix">
+        <ul>
+            <li><a href="" class="active">Top bit coin mining</a></li>
+            <li><a href="">Top paying hyip</a></li>
+            <li><a href="">Scams</a></li>
+        </ul>
+    </nav>
+</div>
+<main class=" wrapper">
+
+    <!--<ba-sidebar></ba-sidebar>-->
+    <page-top></page-top>
+
+    <div class="al-main ">
+        <div class="al-content">
+
+            <div ui-view autoscroll="true" autoscroll-body-top></div>
+        </div>
+    </div>
+    <site-footer></site-footer>
+
+
+    <back-top></back-top>
+</main>
+
+<!--<div id="preloader" ng-show="!$pageFinishedLoading">-->
+<!--<div></div>-->
+<!--</div>-->
+
+<script src="scripts/vendor-1946778306.js"></script>
+
+<script src="scripts/app-0ae9d924c7.js"></script>
+
+</body>
+
+</html>
+
+<script>
+  $('.menuTrigger').click(function() {
+    $('.panel').toggleClass('isOpen');
+    $('.wrapper').toggleClass('pushed');
+  });
+
+  $('.openSubPanel').click(function() {
+    $(this).next('.subPanel').addClass('isOpen');
+  });
+
+  $('.closeSubPanel').click(function() {
+    $('.subPanel').removeClass('isOpen');
+  });
+
+  $('.closePanel').click(function() {
+    $('.panel').removeClass('isOpen');
+    $('.wrapper').removeClass('pushed');
+  });
+</script>
